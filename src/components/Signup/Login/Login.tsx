@@ -1,5 +1,4 @@
 import React from 'react';
-import CssBaseline from '@mui/material/CssBaseline';
 import { Box, display } from '@mui/system';
 import { Stack, FormControlLabel, Checkbox, Divider } from '@mui/material';
 import { Grid, TextField, Typography, Button } from '@mui/material';
@@ -93,17 +92,21 @@ export const Login = () => {
                 <Button
                     size="large"
                     variant="outlined"
-                    // startIcon={<GoogleIcon />}
-                >
+                    startIcon={<GoogleIcon />}>
                     Google
                 </Button>
                 <Button
                     size="large"
                     variant="outlined"
-                    // startIcon={<FacebookIcon />}
-                >
+                    startIcon={<FacebookIcon />}>
                     Facebook
                 </Button>
+                <Typography
+                    fontWeight="medium"
+                    variant="subtitle1"
+                    color="initial">
+                    Don't have account? Click Here to Sign-Up!
+                </Typography>
             </Box>
         </Box>
     );
